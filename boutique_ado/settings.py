@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT'   in os.environ
 
-ALLOWED_HOSTS = ['holly-boutique-ado.heroku.com', 'localhost']
+ALLOWED_HOSTS = ['holly-boutique-ado.herokuapp.com/', 'localhost']
 
 
 # Application definition
@@ -186,7 +186,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'hf-boutique-ado'
     AWS_S3_REGION_NAME = 'eu-west-2'
